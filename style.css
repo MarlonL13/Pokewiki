@@ -18,33 +18,41 @@ body {
   justify-items: center;
 }
 header {
-  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Estiliza os títulos h1 */
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Ajusta o espaço entre o texto e a imagem */
+}
+
 h1 {
   font-size: 2.5rem;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin: 0;
   padding: 1rem;
   color: var(--cor-texto);
   text-align: center;
   letter-spacing: 0.4rem;
+  white-space: nowrap; /* Evita quebra de linha no texto */
+  margin-bottom: 10rem;
 }
 
-/* Posicionado imagem*/
 .image-container {
-  position: absolute; /* Para maior precisão, se necessário */
-  top: 0.5rem;
-  left: 28rem;
-  width: 10vw;
-  height: 10vw;
+  width: 10vw; /* Ajusta o tamanho da imagem conforme necessário */
+  height: auto;
+  margin-bottom: 10rem
 }
 
-/* Redimensionar imagens */
 .image-container img {
-    width: 105%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 /* Estiliza as seções da página */
 section {
