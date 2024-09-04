@@ -47,7 +47,7 @@ h1 {
 .image-container {
   width: 10vw; /* Ajusta o tamanho da imagem conforme necessário */
   height: auto;
-  margin-bottom: 10rem
+  margin-bottom: 10rem;
 }
 
 .image-container img {
@@ -91,7 +91,7 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-  width: 60rem; /* Largura máxima da caixa de resultados */
+  width: 65rem; /* Largura máxima da caixa de resultados */
   height: 46vh; /* Altura máxima da caixa de resultados */
   overflow-y: auto; /* Adiciona rolagem vertical se necessário */
   margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
@@ -111,13 +111,13 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
   font-size: 1.5rem; /* Tamanho da fonte */
-  color: #222831; /* Cor do texto */
+  color: var(--cor-secundária); /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
   text-decoration: none; /* Remove o sublinhado padrão dos links */
-  color: #30475e; /* Cor do texto dos links */
+  color: var(--cor-acento); /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -138,9 +138,9 @@ footer {
   text-align: center; /* Alinha o texto ao centro */
   padding: 0; /* Espaçamento interno */
   width: 100%; /* Largura total da página */
-  position: absolute; /* Posiciona o rodapé */
   bottom: 0; /* Alinha ao fundo da página */
   font-size: 1rem; /* Tamanho da fonte */
+  position: fixed;
 }
 
 @media (max-width: 768px) {
