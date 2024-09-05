@@ -14,7 +14,7 @@
             <h1 class="titulo">Pokewiki</h1>
         </div>
         <div class="image-container">
-            <img src="https://github.com/fanzeyi/pokemon.json/blob/master/images/778.png?raw=true"
+            <img src="mimikyu.png"
                 alt="Desenho do pokemon mimikyu" srcset="">
         </div>
     </header>
@@ -22,38 +22,9 @@
 
         <section>
             <input type="text" placeholder="Digite o nome do Pokémon" />
-            <button>Buscar</button>
+            <button onclick="pesquisar()">Buscar</button>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>Mimikyu</h2>
-                <p> <strong>id:</strong> 778<br>
-                    <strong>tipo:</strong> fantasma, fada<br>
-                    <strong>Descrição:</strong> Este Pokémon vive em lugares escuros intocados pela luz do sol. Quando
-                    aparece diante dos humanos, ele se esconde sob um pano que lembra um Pikachu.
-                </p>
-                <a href="https://www.pokemon.com/br/pokedex/mimikyu" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>Drampa</h2>
-                <p> <strong>id:</strong> 785<br>
-                    <strong>tipo:</strong> Dragão, Normal<br>
-                    <strong>Descrição:</strong> As montanhas que ele chama de lar têm quase duas milhas de altura. Em
-                    raras ocasiões, ele desce para brincar com as crianças que vivem nas cidades abaixo.
-                </p>
-                <a href="https://www.pokemon.com/br/pokedex/drampa" target="_blank">Mais informações</a>
-            </div>
-
-            <div class="item-resultado">
-                <h2>Salamence</h2>
-                <p> <strong>id:</strong> 373<br>
-                    <strong>tipo:</strong> Dragão, Voador<br>
-                    <strong>Descrição:</strong> Ele voa em suas asas, que cresceram finalmente. Em sua felicidade, ele
-                    jorra chamas quentes, queimando tudo que passa.
-                </p>
-                <a href="https://www.pokemon.com/br/pokedex/salamence" target="_blank">Mais informações</a>
-            </div>
-
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
     <footer>
