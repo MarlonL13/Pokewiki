@@ -67,7 +67,7 @@ section input {
   padding: 1rem; /* Espaçamento interno */
   border-radius: 1.5rem; /* Borda arredondada */
   margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-  color: var(--cor-texto); /* Cor do texto */
+  color: var(--cor-acento); /* Cor do texto */
   font-size: 1rem; /* Tamanho da fonte */
   box-sizing: border-box; /* Inclui padding e border na largura total */
 }
