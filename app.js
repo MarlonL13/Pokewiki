@@ -1,3 +1,35 @@
+function fetchJSON() {
+  fetch("./pokedex.json")
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+      return res.json;
+    })
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Unable to fetch data", error));
+}
+
+fetchJSON();
+
+console.log(res[1]);
+
+function checkEnterKey(event) {
+  /*gi
+  Funtion to detect enter key is pressed then run pesquisar function
+
+  Params:
+  event -- the key presses of the user
+
+  Returns:
+  Runs the function pesquisar
+  */
+  // Checa se o event é a tecla enter
+  if (event.key == "Enter") {
+    pesquisar();
+  }
+}
+
 function pesquisar() {
   // Obtém a seção HTML onde os resultados da pesquisa serão exibidos
   let section = document.getElementById("resultados-pesquisa");
@@ -14,6 +46,7 @@ function pesquisar() {
   // Itera sobre cada elemento (dado) do array de dados
   for (let dado of dados) {
     if (
+      dado.nome.includes(campoPesquisa) ||
       dado.nome.toLowerCase().includes(campoPesquisa) ||
       dado.id.toString().includes(campoPesquisa)
     ) {
