@@ -9,26 +9,15 @@ function fetchJSON() {
     .then((data) => console.log(data))
     .catch((error) => console.error("Unable to fetch data", error));
 }
-
 fetchJSON();
 
-console.log(res[1]);
+const inputElement = document.getElementById("campo-pesquisa");
 
-function checkEnterKey(event) {
-  /*gi
-  Funtion to detect enter key is pressed then run pesquisar function
-
-  Params:
-  event -- the key presses of the user
-
-  Returns:
-  Runs the function pesquisar
-  */
-  // Checa se o event é a tecla enter
-  if (event.key == "Enter") {
+inputElement.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
     pesquisar();
   }
-}
+});
 
 function pesquisar() {
   // Obtém a seção HTML onde os resultados da pesquisa serão exibidos
